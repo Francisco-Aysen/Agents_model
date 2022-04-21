@@ -58,7 +58,7 @@ while True:
         if crit > 0 and crit < 4:
             break
     except ValueError:
-        print('A number is requested. Try again. For example, write 20') 
+        print('A number is requested. Try again. For example, write 2') 
 
 #Settings for animation
 fig = matplotlib.pyplot.figure(figsize=(7, 7))
@@ -194,7 +194,7 @@ def gen_function(b = [0]):
         a = a + 1
         
     if a > z:
-        print("End. Your criterion was no met after " + str(z) + "iterations" +
+        print("End. Your criterion was no met after " + str(z) + " iterations" +
               "\nCheck your outputs in your directory to see the results")        
         
 def exportdata (storage):
@@ -233,4 +233,4 @@ animation = matplotlib.animation.FuncAnimation(
     fig, update,frames=gen_function, repeat=False)
 matplotlib.pyplot.show()
 
-#importlib.reload(model)
+#importlib.reload(model) Couldn´t manage to run again the model when passing as a script
